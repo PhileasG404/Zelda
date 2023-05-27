@@ -5,17 +5,70 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 
+#row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-/*
-@font-face {
+#column2img {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+#column3img {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.police1light {
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
+  color: white;
+}
+.police1 {
+  font-family: 'Medula One', cursive;
+  src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
+  margin-bottom: 0;
 }
 
-@font-face {
+.police2light {
   font-family: 'Libre Baskerville', serif;
-  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype'); 
+  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-size: 15px;
+  text-align: center;
+  color: white;
 }
+.police2 {
+  font-family: 'Libre Baskerville', serif;
+  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-size: 15px;
+  text-align: center;
+}
+
+#titre1 {
+  font-weight: bolder;
+}
+
+#titre2 {
+  font-weight: bold;
+}
+#margin {
+  margin: 15px;
+}
+
+.dark {
+  background-image: url("../img/zelda-bg_pattern_brown.png");
+}
+
+.light {
+  background-image: url("../img/zelda-bg_pattern_white.png");
+}
+
+/*
+
 
 @font-face {
   font-family: 'Libre Baskerville', serif;
@@ -23,7 +76,7 @@
   font-weight: bold;
 }
 
-*/
+
 
 
 /*
@@ -44,17 +97,17 @@ Couleur dorée : #af966d
 
 */
 
-/* BACKGROUND */
+/* BACKGROUND 
 
 .dark {
-    /* Image de fond : zelda-bg_pattern_brown.png */
+    /* Image de fond : zelda-bg_pattern_brown.png 
 }
 
 .light {
-    /* Image de fond : zelda-bg_pattern_white.png */
+    /* Image de fond : zelda-bg_pattern_white.png 
 }
 
-/* GRID CSS */
+/* GRID CSS 
 
 .wrapper {
     
@@ -76,13 +129,13 @@ Couleur dorée : #af966d
 
 }
   
-/* Bouton */
+/* Bouton 
 
 .btn {
    
 }
 
-/* Flexbox */
+/* Flexbox 
   
 .myFlex {
 

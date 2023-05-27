@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css and js/style.css">
+
     <title>Mon titre</title>
     <!-- Intégration Bootstrap -->
      
@@ -13,11 +16,54 @@
 <body>
     <!-- MENU / NAVBAR -->
     <!-- Chaque entrée du menu doit mener à une section de la landing page -->
-
+    <nav style="background-color: #af966d;" height="60" width="100%" class="fixed-top">
+      <div class="container-fluid">
+        
+        <div id="navbarNav">
+          <ul class="navbar-nav">
+            <li>
+              <p class="police1">
+                <a class="navbar-brand" href="#">
+                  <img src="./img/logo-xs-svg.png" alt="" width="195" height="100">
+                </a>
+                <button style="margin: 1em;font-size:40px;border:none;background-color:transparent;" id="titre1">Le jeu évènement</button>
+                <button style="font-size:30px;border:none;background-color:transparent;" id="titre2" onclick="scrollToSection('section1')">ENTRER</button>
+                <button style="font-size:30px;border:none;background-color:transparent;" id="margin" onclick="scrollToSection('section2')">DECOUVRIR</button>
+                <button style="font-size:30px;border:none;background-color:transparent;" id="margin" onclick="scrollToSection('section3')">COMBATTRE</button>
+                <button style="font-size:30px;border:none;background-color:transparent;" id="margin" onclick="scrollToSection('section4')">S'EQUIPER</button>
+                <button style="font-size:30px;border:none;background-color:transparent;" id="margin" onclick="scrollToSection('section5')">PLUS</button>
+                <p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
     <!-- CAROUSEL -->
     <!-- Carousel full width avec navigation par points - 4 slides -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin: 157px 0px 0px 0;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/zelda-botw.jpg" class="d-block w-100" alt="./img/zelda-botw.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/zelda-header-d.jpg" class="d-block w-100" alt="./img/zelda-header-d.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/zelda-header-f.jpg" class="d-block w-100" alt="./img/zelda-header-f.jpg">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/zelda-header-g.jpg" class="d-block w-100" alt="./img/zelda-header-g.jpg">
+        </div>
+      </div>
+    </div>
     
 
 
@@ -25,32 +71,161 @@
       <!-- Utiliser les bonnes classes pour les background des sections -->
       <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
       <!-- Utiliser les class de spacing pour aérer votre page : https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
-     
+    <div class="dark" id="section1">
+      <p class="police1light" style="font-size: 40px;display: flex;justify-content: center;">Entrez dans un monde d'aventure</p>
+      <div class="hl-arrow"></div>
+      <p class="police2light" style="margin: 30px 15%;">Oubliez tout ce que vous savez sur les jeux The Legend of Zelda. Plongez dans un monde de découverte, d'exploration et d'aventure dans The Legend of Zelda: Breath of the Wild, un nouveau jeu qui vient bouleverser la série à succès.</p>
+      <div class="container-card">
+        <div class="mx-auto" style="width:1000px;" id="row">
+          <div class="col-3" id="column2img">
+            <img src="./img/zelda-png-c.png" class="d-block w-100">
+          </div>
+          <div class="col-4" id="column2img">
+            <p class="police1light" style="font-size: 40px;display: flex;justify-content: center;">Ouvre les yeux</p>
+            <div class="hl-arrow"></div>
+            <p class="police2light" style="margin: 30px 15%;">Après un sommeil d'un siècle, Link se réveille seul dans un monde qu'il ne reconnaît pas. Le héros légendaire va désormais devoir explorer un territoire vaste et dangereux et retrouver la mémoire avant qu'Hyrule ne soit perdu à jamais. Link entreprend un périple pour trouver des réponses où il devra se servir de tout ce qui se trouve sur sa route pour survivre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-      <!-- SECTION #2 - BOTSTRAP COL -->
-      <!-- N'oubliez pas l'ffichage responsive, chaque colonne doit être en full width sur smartphone -->
-     
+    <!-- SECTION #2 - BOTSTRAP COL -->
+    <!-- N'oubliez pas l'ffichage responsive, chaque colonne doit être en full width sur smartphone -->
+    <div class="light" id="section2">
+      <p class="police1" style="font-size: 40px;display: flex;justify-content: center;">Découvrez le vaste monde qui vous entoure</p>
+      <div class="hl-arrow"></div>
+      <p class="police2" style="margin: 30px 15%;">Explorez les paysages d'Hyrule de la manière qui vous convient. Escaladez des tours et montagnes à la recherche de nouvelles destinations et utilisez une mystérieuse tablette appelée "tablette sheikah" pour voir une carte d'Hyrule qui permet de repérer des points d'intérêt.</p>
+      <img style="display:flex;justify-content:center;" src="./img/zelda-header-c.jpg" class="mx-auto" width="1000" height="600" alt="./img/zelda-header-c.jpg">
+      <p class="police2" style="margin: 30px 15%;">Link peut couvrir rapidement un large territoire en montant à cheval, naviguer à travers les eaux d'Hyrule sur un radeau ou dévaler les pentes en surfant sur son bouclier. Link a également la possibilité de fendre le ciel grâce son paravoile.</p>
+      <div class="mx-auto" style="width:1200px;" id="row">
+        <img src="./img/zelda-png-b.png" class="d-block" id="column3img" width="490" height="490" alt="./img/zelda-png-b.png">
+        <img src="./img/zelda-png-a.png" class="d-block" id="column3img" width="490" height="490" alt="./img/zelda-png-a.png">
+        <img src="./img/zelda-png-c.png" class="d-block" id="column3img" width="490" height="490" alt="./img/zelda-png-c.jpg">
+      </div>
+    </div>
 
 
     <!-- SECTION #3 - CAROUSEL -->
     <!-- Simple carousel sans navigation -->
-    
-    
+    <div class="dark" id="section3">
+      <p class="police1light" style="font-size: 40px;display: flex;justify-content: center;">Combattez pour votre royaume</p>
+      <div class="hl-arrow"></div>
+      <p class="police2light" style="margin: 30px 15%;">Grâce aux capacités d'adaptation de Link, celui-ci est capable d'acquérir différentes armes pour combattre. Néanmoins, ces armes s'usent avec le temps et il devra sans cesse en chercher de nouvelles.</p>
+      <div style="display: flex;justify-content: center;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img width="1000" height="600" src="./img/zelda-gardian.jpg" class="d-block" alt="./img/zelda-gardian.jpg">
+            </div>
+            <div class="carousel-item">
+              <img width="1000" height="600" src="./img/zelda-hinox.jpg" class="d-block" alt="./img/zelda-hinox.jpg">
+            </div>
+            <div class="carousel-item">
+              <img width="1000" height="600" src="./img/zelda-run.jpg" class="d-block" alt="./img/zelda-run.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="police2light" style="margin: 30px 15% 0px;">Mais pour combattre, il n'y a pas que les armes. Link devra également apprendre à maîtriser toutes sortes d'attaques, comme le tir de flèches à longue portée ou la manipulation d'explosifs afin de ressortir vainqueur des affrontements qui l'attendent.  </p>
+    </div>
 
     <!-- SECTION #4 - GRID CSS -->
     <!-- Construire une mini Grid CSS (largeur 100%) pour les images -->
     <!-- Bien respecter le graphisme du bouton -->
-   
-
+    <div class="light" id="section4">
+      <p class="police1" style="font-size: 40px;display:flex;justify-content: center;">Préparez-vous et équipez-vous en conséquence</p>
+      <div class="hl-arrow"></div>
+      <p class="police2" style="margin: 30px 15%;">Il vous faudra donc chasser les créatures sauvages, récolter des fruits et des légumes, ou piller des campements ennemis pour y trouver de la nourriture. Vous pourrez même apprendre des recettes pour pimenter le tout ! De nouvelles recettes ne modifient pas uniquement le goût des aliments, elle permettent de soigner Link et de lui conférer un boost de compétence.</p>
+      <div style="display:flex;justify-content:center;">
+        <img width="350" height="620" src="./img/zelda-grid-a.jpg" style="margin: 10px;" class="d-block" alt="./img/zelda-grid-a.jpg">
+        <div>
+          <img width="720" height="300" src="./img/zelda-grid-b.png" style="margin: 10px;" class="d-block" alt="./img:zelda-grid-b.png">
+          <div style="display: flex;flex-direction:row;">
+            <img width="350" height="300" src="./img/zelda-grid-c.png" style="margin: 10px;" class="d-block" alt="./img/zelda-grid-c.png">
+            <img width="350" height="300" src="./img/zelda-grid-d.jpg" style="margin: 10px;" class="d-block" alt="./img/zelda-grid-d.jpg">
+          </div>
+        </div>
+      </div>
+      <p class="police2" style="margin: 30px 15%;">Link peut également porter toutes sortes de tenues, et en alternant ses vêtements il sera en mesure de se protéger des intempéries ou d'esquiver les coups ennemis. Il existe une foule de tenues différentes pour Link, des équipements pour se protéger de la neige aux armures, mais prenez garde à ne pas porter de métal lors d'une tempête ou vous pourriez vous faire électrocuter par la foudre !</p>
+    </div>
 
     <!-- SECTION #5 - FLEXBOX -->
     <!-- Construisez vos colonnes avec Flexbox-->
     <!-- Pour l'icône de l'oeil : https://icons.getbootstrap.com/ -->
-    
-
+    <div class="dark" id="section5">
+      <p class="police1light" style="font-size: 40px;display:flex;justify-content: center;">Vous cherchez d'autres jeux de la série The Legend of Zelda ?</p>
+      <div class="hl-arrow"></div>
+      <div style="display:flex;justify-content:center;margin: 10px 200px 5px;">
+        <div class="col-2 col-md-6 col-lg-4 d-flex" style="margin: 5px;" id="light">
+          <!-- Card -->
+          <div class="card shadow-light-lg lift lift-lg">
+            <!-- Body -->
+            <p class="card-img-top">
+              <!-- Image -->
+              <img src="./img/zelda-link-wakening.jpg" alt="..." class="card-img-top">
+              <!-- Heading -->
+              <h3 class="police1" style="text-align: center;">
+                The Legend of Zelda: Link's Awakening
+              </h3>
+              <!-- Text -->
+              <p class="police2">
+                Aidez Link à quitter une île étrange dans The Legend of Zelda: Link's Awakening sur Nintendo Switch.
+              </p>
+            </p>
+            <a style="width: 100px;">
+              <img src="./img/icon_oeil.jfif" alt="..." class="card-img-top" height="100px" style="display:flex;justify-content: center;">
+            </a>
+          </div>
+        </div>
+        <div class="col-2 col-md-6 col-lg-4 d-flex" style="margin: 5px;" id="light">
+          <!-- Card -->
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+            <!-- Body -->
+            <p class="card-img-top">
+              <!-- Image -->
+              <img src="./img/zelda-tears.jpg" alt="..." class="card-img-top">
+              <!-- Heading -->
+              <h3 class="police1" style="text-align: center;">
+                The Legend of Zelda: Tears of the Kingdom
+              </h3>
+              <!-- Text -->
+              <p class="police2">
+                Une aventure épique à travers les terres et les cieux d'Hyrule vous attend dans The Legend of Zelda: Tears of the Kingdom sur Nintendo Switch.
+              </p>
+            </p>
+            <a style="width: 100px;">
+              <img src="./img/icon_oeil.jfif" alt="..." class="card-img-top" height="100px" style="display:flex;justify-content: center;">
+            </a>
+          </div>
+        </div>
+        <div class="col-2 col-md-6 col-lg-4 d-flex" style="margin: 5px;" id="light">
+          <!-- Card -->
+          <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+            <!-- Body -->
+            <p class="card-img-top">
+              <!-- Image -->
+              <img src="./img/zelda-cadence.jpg" alt="..." class="card-img-top">
+              <!-- Heading -->
+              <h3 class="police1" style="text-align: center;">
+                Cadence of Hyrule – Crypt of the NecroDancer Featuring The Legend of Zelda
+              </h3>
+              <!-- Text -->
+              <p class="police2">
+                Combattez au rythme de mélodies classiques remixées dans Cadence of Hyrule – Crypt of the NecroDancer Featuring The Legend of Zelda sur Nintendo Switch.
+              </p>
+              <a style="width: 100px;">
+                <img src="./img/icon_oeil.jfif" alt="..." class="card-img-top" height="100px" style="display:flex;justify-content: center;">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer basique -->
     
 </body>
+<script src="./css and js/style.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
